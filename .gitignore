@@ -1,0 +1,7 @@
+﻿.idea/
+*.iml
+out/
+.DS_Store
+Thumbs.db
+*.zip
+*.bak

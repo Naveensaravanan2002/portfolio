@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Naveen S — Software Engineer</title>
+<meta name="description" content="Naveen S — software engineer at LTIMindtree. Java, Spring Boot, React and graph data. Messy data in, working products out." />
+<meta name="author" content="Naveen S" />
+<meta name="theme-color" content="#0B3B2E" />
+<link rel="canonical" href="https://naveen-portfolio-zeta.vercel.app/" />
+
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Naveen S — Software Engineer" />
+<meta property="og:description" content="Messy data in, working products out. Java, Spring Boot, React, Neo4j." />
+<meta property="og:url" content="https://naveen-portfolio-zeta.vercel.app/" />
+<meta property="og:image" content="assets/img/og-image.png" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" href="assets/img/logo.png" />
+
+<link rel="preload" href="assets/fonts/Fraunces-normal-100_900.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href="assets/fonts/Fraunces-italic-100_900.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href="assets/fonts/Manrope-normal-400.woff2" as="font" type="font/woff2" crossorigin />
+
+<link rel="stylesheet" href="css/base.css" />
+<link rel="stylesheet" href="css/components.css" />
+<link rel="stylesheet" href="css/sections.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Naveen S",
+  "jobTitle": "Software Engineer",
+  "worksFor": { "@type": "Organization", "name": "LTIMindtree" },
+  "address": { "@type": "PostalAddress", "addressLocality": "Hyderabad", "addressCountry": "IN" },
+  "email": "mailto:naveensaravanan2002@gmail.com",
+  "url": "https://naveen-portfolio-zeta.vercel.app/",
+  "sameAs": [
+    "https://github.com/Naveensaravanan2002",
+    "https://www.linkedin.com/in/naveensaravanan2002/"
+  ],
+  "alumniOf": { "@type": "CollegeOrUniversity", "name": "K. Ramakrishnan College of Engineering" },
+  "knowsAbout": ["Java", "Spring Boot", "React", "Angular", "Neo4j", "Cypher", "DuckDB", "Parquet", "PostgreSQL", "Python"]
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<div class="progress" id="progress" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+<div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+<div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+
+<!-- shared icon sprite -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-arrow-ne" viewBox="0 0 14 14"><path d="M3.6 10.4 10.4 3.6M10.4 3.6H5.2M10.4 3.6v5.2" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-arrow-e" viewBox="0 0 14 14"><path d="M2.6 7h8.8M8.1 3.7 11.4 7l-3.3 3.3" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-arrow-s" viewBox="0 0 14 14"><path d="M7 2.6v8.8M3.7 8.1 7 11.4l3.3-3.3" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-copy" viewBox="0 0 14 14"><rect x="5" y="5" width="6.6" height="6.6" rx="1.4" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M9 3.4V3a1.4 1.4 0 0 0-1.4-1.4H3A1.4 1.4 0 0 0 1.6 3v4.6A1.4 1.4 0 0 0 3 9h.4" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></symbol>
+  <symbol id="i-search" viewBox="0 0 16 16"><circle cx="7.2" cy="7.2" r="4.6" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="m10.8 10.8 3.1 3.1" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></symbol>
+  <symbol id="i-download" viewBox="0 0 14 14"><path d="M7 2v6.4M4.2 6 7 8.8 9.8 6M2.6 11.2h8.8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+</svg>
+
+<!-- ══════════════════════════ NAV ══════════════════════════ -->
+<header class="nav-wrap">
+  <nav class="nav" aria-label="Primary">
+    <a class="nav__brand" href="#top" aria-label="Naveen S — back to top">
+      <span class="monogram monogram--sm" aria-hidden="true">
+        <svg viewBox="0 0 100 100" focusable="false"><path d="M22 82V18l56 64V18" fill="none" stroke="currentColor" stroke-width="13"/></svg>
+      </span>
+      <span class="nav__brand-text">Naveen S</span>
+    </a>
+
+    <ul class="nav__links">
+      <li><a href="#work">Work</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#credentials">Credentials</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+
+    <div class="nav__actions">
+      <button class="kbd-btn" type="button" data-palette-open aria-label="Open quick navigation">
+        <svg width="14" height="14" aria-hidden="true"><use href="#i-search"/></svg>
+        <kbd>Ctrl</kbd><kbd>K</kbd>
+      </button>
+      <a class="btn btn--lilac btn--sm nav__cta" href="#contact">Let's talk <svg class="i" aria-hidden="true"><use href="#i-arrow-ne"/></svg></a>
+      <button class="nav__burger" type="button" aria-expanded="false" aria-controls="mobileMenu" data-menu-toggle>
+        <span></span><span></span>
+        <span class="sr-only">Menu</span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu" hidden>
+    <a href="#work">Work</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#credentials">Credentials</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+    <a class="mobile-menu__resume" href="assets/NaveenS-Resume.pdf" target="_blank" rel="noopener">Resume (PDF) <svg class="i" aria-hidden="true"><use href="#i-arrow-ne"/></svg></a>
+  </div>
+</header>
+
+<main id="main">
+<!-- ══════════════════════════ HERO ══════════════════════════ -->
+<section class="hero" id="top">
+  <div class="hero__glow" aria-hidden="true"></div>
+  <div class="wrap hero__inner">
+    <div class="hero__copy">
+      <p class="eyebrow" data-reveal style="--i:0">
+        <span class="status-dot" aria-hidden="true"></span>
+        Naveen S · Software engineer · Hyderabad, IN
+      </p>
+
+      <h1 class="hero__title" data-reveal style="--i:1">
+        Messy data in.<br />
+        <em>Working products</em> out.
+      </h1>
+
+      <p class="hero__lede" data-reveal style="--i:2">
+        I'm a software engineer at LTIMindtree. I build the Java services, React screens and
+        data pipelines that turn something nobody can read into something people actually use.
+        Give me an ugly dataset and a real problem — that's the fun part.
+      </p>
+
+      <div class="hero__cta" data-reveal style="--i:3">
+        <a class="btn btn--lilac" href="#work">See the work <svg class="i" aria-hidden="true"><use href="#i-arrow-s"/></svg></a>
+        <a class="btn btn--ghost" href="assets/NaveenS-Resume.pdf" target="_blank" rel="noopener">Resume <svg class="i" aria-hidden="true"><use href="#i-arrow-ne"/></svg></a>
+        <button class="btn btn--bare" type="button" data-copy-email>
+          <span class="mono">naveensaravanan2002@gmail.com</span>
+          <span class="btn__copy" aria-hidden="true">copy</span>
+        </button>
+      </div>
+
+      <ul class="hero__proof" data-reveal style="--i:4">
+        <li><span class="mono">Now</span> Software Engineer @ LTIMindtree</li>
+        <li><span class="mono">Top 100</span> Hack2Future finalist</li>
+        <li><span class="mono">06</span> products shipped end to end</li>
+      </ul>
+    </div>
+
+    <!-- ── doodle stage ── -->
+    <div class="hero__aside" data-reveal style="--i:2">
+      <div class="doodle" id="doodle" aria-hidden="true">
+        <svg class="doodle__ring" viewBox="0 0 340 340">
+          <circle cx="170" cy="170" r="152" fill="none" stroke="rgba(11,59,46,.16)" stroke-width="1" stroke-dasharray="2 7" />
+          <circle cx="170" cy="170" r="112" fill="none" stroke="rgba(11,59,46,.1)" stroke-width="1" />
+        </svg>
+
+        <span class="doodle__orbit doodle__orbit--a">
+          <svg class="doodle__item" viewBox="0 0 40 40">
+            <path d="M34 6 6 19l11 4 3 11 5-9 9-19Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
+            <path d="M17 23 34 6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="doodle__orbit doodle__orbit--b">
+          <svg class="doodle__item" viewBox="0 0 40 40">
+            <rect x="9" y="6" width="9" height="4.6" rx="2.3" fill="none" stroke="currentColor" stroke-width="1.6"/>
+            <rect x="22" y="6" width="9" height="4.6" rx="2.3" fill="none" stroke="currentColor" stroke-width="1.6"/>
+            <ellipse cx="20" cy="23" rx="10" ry="12" fill="none" stroke="currentColor" stroke-width="1.7"/>
+            <path d="M20 11v24M14 18h12M14 27h12" fill="none" stroke="currentColor" stroke-width="1.4"/>
+          </svg>
+        </span>
+        <span class="doodle__orbit doodle__orbit--c">
+          <svg class="doodle__item" viewBox="0 0 40 40">
+            <path d="M20 4v7M20 29v7M4 20h7M29 20h7M9 9l5 5M26 26l5 5M31 9l-5 5M14 26l-5 5" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="doodle__orbit doodle__orbit--d">
+          <svg class="doodle__item" viewBox="0 0 40 40">
+            <path d="M8 26c6-16 18 8 24-8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            <path d="m27 16 5 2-1 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        <span class="doodle__orbit doodle__orbit--e">
+          <svg class="doodle__item" viewBox="0 0 40 40">
+            <path d="M13 8 5 20l8 12M27 8l8 12-8 12" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        <span class="doodle__orbit doodle__orbit--f">
+          <svg class="doodle__item" viewBox="0 0 40 40">
+            <path d="M22 4 10 22h8l-2 14 14-20h-8l2-12Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        <span class="doodle__orbit doodle__orbit--g">
+          <svg class="doodle__item" viewBox="0 0 40 40">
+            <path d="M20 6c3 6 8 9 14 10-6 2-11 6-14 14-3-8-8-12-14-14 6-1 11-4 14-10Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+          </svg>
+        </span>
+
+        <div class="doodle__center">
+          <span class="monogram monogram--xl">
+            <svg viewBox="0 0 100 100" focusable="false"><path d="M22 82V18l56 64V18" fill="none" stroke="currentColor" stroke-width="13"/></svg>
+          </span>
+        </div>
+
+        <span class="doodle__tag doodle__tag--a mono">ships things</span>
+        <span class="doodle__tag doodle__tag--b mono">reads graphs</span>
+      </div>
+
+      <figure class="hero__quote">
+        <blockquote>“Creativity runs the world — can’t it run a few lines of code?”</blockquote>
+        <figcaption class="mono">Naveen said, 2023</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <div class="hero__scroll mono" aria-hidden="true">scroll<span class="hero__scroll-line"></span></div>
+</section>
+
+<!-- ══════════════════════════ MARQUEE ══════════════════════════ -->
+<div class="marquee-band" aria-hidden="true">
+  <div class="marquee">
+    <div class="marquee__track">
+      <span>Java</span><span class="dot" aria-hidden="true"></span><span>Spring Boot</span><span class="dot" aria-hidden="true"></span><span>React</span><span class="dot" aria-hidden="true"></span><span>Angular</span><span class="dot" aria-hidden="true"></span><span>Neo4j</span><span class="dot" aria-hidden="true"></span><span>Cypher</span><span class="dot" aria-hidden="true"></span><span>DuckDB</span><span class="dot" aria-hidden="true"></span><span>Parquet</span><span class="dot" aria-hidden="true"></span><span>PostgreSQL</span><span class="dot" aria-hidden="true"></span><span>Python</span><span class="dot" aria-hidden="true"></span><span>TypeScript</span><span class="dot" aria-hidden="true"></span>
+      <span>Java</span><span class="dot" aria-hidden="true"></span><span>Spring Boot</span><span class="dot" aria-hidden="true"></span><span>React</span><span class="dot" aria-hidden="true"></span><span>Angular</span><span class="dot" aria-hidden="true"></span><span>Neo4j</span><span class="dot" aria-hidden="true"></span><span>Cypher</span><span class="dot" aria-hidden="true"></span><span>DuckDB</span><span class="dot" aria-hidden="true"></span><span>Parquet</span><span class="dot" aria-hidden="true"></span><span>PostgreSQL</span><span class="dot" aria-hidden="true"></span><span>Python</span><span class="dot" aria-hidden="true"></span><span>TypeScript</span><span class="dot" aria-hidden="true"></span>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════ STATS ══════════════════════════ -->
+<section class="stats" aria-label="At a glance">
+  <div class="wrap stats__grid">
+    <div class="stat" data-reveal style="--i:0">
+      <span class="stat__num">06</span>
+      <span class="stat__label">products designed, built and shipped end to end</span>
+    </div>
+    <div class="stat" data-reveal style="--i:1">
+      <span class="stat__num">Top <em>100</em></span>
+      <span class="stat__label">Hack2Future finalist — LTIMindtree × Microsoft</span>
+    </div>
+    <div class="stat" data-reveal style="--i:2">
+      <span class="stat__num">8.56</span>
+      <span class="stat__label">CGPA — B.E. Electronics &amp; Communication</span>
+    </div>
+    <div class="stat" data-reveal style="--i:3">
+      <span class="stat__num">04</span>
+      <span class="stat__label">certifications across Google, Anthropic, Microsoft and Vanderbilt</span>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════ WORK ══════════════════════════ -->
+<section class="section work" id="work">
+  <div class="wrap">
+    <header class="section-head work__head">
+      <div class="work__head-left">
+        <p class="eyebrow" data-reveal><span class="eyebrow__num">01</span> Selected work</p>
+        <h2 class="section-title" data-reveal>Five things I <em>actually</em> shipped.</h2>
+      </div>
+      <div class="work__head-right" data-reveal>
+        <p class="section-sub">Two at work, one for a hackathon final, two for the joy of it. Each one opens a dossier: the problem, the decisions, the stack.</p>
+        <ol class="work__toc mono" aria-label="Jump to a project">
+          <li><a href="#card-fingraph"><span>01</span> FinGraphAI</a></li>
+          <li><a href="#card-ledgerlake"><span>02</span> LedgerLake</a></li>
+          <li><a href="#card-ranger"><span>03</span> Ranger</a></li>
+          <li><a href="#card-driveu"><span>04</span> DriveU</a></li>
+          <li><a href="#card-arcade"><span>05</span> Brick Breaker</a></li>
+        </ol>
+      </div>
+    </header>
+
+    <!-- ── Featured: FinGraphAI ── -->
+    <article class="feature" data-reveal id="card-fingraph">
+      <div class="feature__top">
+        <div class="feature__meta mono">
+          <span>01 / Graph analytics</span>
+          <span class="chip chip--live"><span class="status-dot"></span>Interactive demo</span>
+        </div>
+        <h3 class="feature__title">FinGraph<em>AI</em></h3>
+        <p class="feature__tag">AML detection that thinks in <em>networks</em>, not rows.</p>
+        <p class="feature__desc">
+          Money laundering hides in relationships — circular flows, mule rings, layered transfers.
+          FinGraphAI models accounts and transactions as a property graph, runs Cypher traversals to
+          surface the patterns, then scores each account on what it triggers. Built for
+          Hack2Future (LTIMindtree × Microsoft) as a <strong>top 100 finalist</strong>.
+        </p>
+        <ul class="chips" aria-label="Technologies">
+          <li>Java</li><li>Spring Boot</li><li>Neo4j</li><li>Cypher</li><li>React</li><li>Spring Security</li>
+        </ul>
+        <div class="feature__actions">
+          <button class="btn btn--cream" type="button" data-dossier="fingraph">Open dossier <svg class="i" aria-hidden="true"><use href="#i-arrow-ne"/></svg></button>
+          <a class="btn btn--ghost-light" href="https://github.com/Naveensaravanan2002/FinGraph-AI" target="_blank" rel="noopener">Source <svg class="i" aria-hidden="true"><use href="#i-arrow-ne"/></svg></a>
+        </div>
+      </div>
+
+      <div class="feature__demo graph-demo" aria-label="Interactive demo: AML graph explorer">
+        <div class="graph-demo__bar">
+          <div class="graph-demo__tabs" role="tablist" aria-label="Detection pattern">
+            <button type="button" role="tab" aria-selected="true" class="is-active" data-graph-mode="cycle">Cycle</button>
+            <button type="button" role="tab" aria-selected="false" data-graph-mode="structuring">Structuring</button>
+            <button type="button" role="tab" aria-selected="false" data-graph-mode="mule">Mule ring</button>
+            <button type="button" role="tab" aria-selected="false" data-graph-mode="rapid">Rapid movement</button>
+          </div>
+          <button type="button" class="graph-demo__run mono" id="graphRun">
+            <span class="status-dot"></span> Run detection
+          </button>
+        </div>
+
+        <div class="graph-demo__stage">
+          <svg id="graphSvg" viewBox="0 0 520 340" role="img" aria-label="Property graph of accounts and transactions">
+            <g class="graph-edges" id="graphEdges"></g>
+            <g class="graph-nodes" id="graphNodes"></g>
+          </svg>
+          <div class="graph-demo__legend mono">
+            <span><i class="lg lg--low"></i>Low risk</span>
+            <span><i class="lg lg--med"></i>Medium</span>
+            <span><i class="lg lg--high"></i>High</span>
+          </div>
+        </div>
+
+        <div class="graph-demo__readout" id="graphReadout" aria-live="polite">
+          <div class="readout__head mono">
+            <span id="graphPatternName">CYCLE</span>
+            <span class="readout__chip" id="graphAlertCount">1 alert</span>
+          </div>
+          <p class="readout__desc" id="graphPatternDesc">
+            Funds leave an account and return to it through intermediaries. Select any node to inspect its score.
+          </p>
+          <div class="readout__account mono">
+            <span>ACCOUNT</span><strong id="graphAccountId">—</strong>
+            <span>RISK</span><strong id="graphRisk">—</strong>
+          </div>
+          <ul class="readout__patterns" id="graphPatterns"></ul>
+        </div>
+        <p class="demo-hint mono">click nodes to inspect · click a pattern tab to re-run the query</p>
+      </div>
+    </article>
+
+    <!-- ── Project rows ── -->
+    <div class="work-list">
+      <article class="wcard" data-reveal id="card-ledgerlake">
+        <div class="wcard__index mono">02</div>
+        <div class="wcard__copy">
+          <p class="wcard__label mono">Data platform</p>
+          <h3 class="wcard__title">Ledger<em>Lake</em></h3>
+          <p class="wcard__sub">A batch pipeline that lands raw transactions and hands back analytics-ready Parquet.</p>
+
+          <div class="pipeline" id="pipeline" aria-label="Demo: raw to analytics-ready pipeline">
+            <div class="pipeline__stages" id="pipelineStages">
+              <div class="stage is-done" data-stage="0"><span class="stage__dot"></span><b>raw</b><small>IBM AML CSV</small></div>
+              <div class="stage is-done" data-stage="1"><span class="stage__dot"></span><b>cleaned</b><small>validated</small></div>
+              <div class="stage is-done" data-stage="2"><span class="stage__dot"></span><b>analytics</b><small>DuckDB</small></div>
+              <div class="stage is-done" data-stage="3"><span class="stage__dot"></span><b>graph</b><small>Neo4j load</small></div>
+            </div>
+            <div class="pipeline__foot">
+              <button class="btn btn--sm btn--ink" type="button" id="pipelineRun">Run pipeline</button>
+              <span class="mono pipeline__log" id="pipelineLog" aria-live="polite">last run · idempotent · 0 rows duplicated</span>
+            </div>
+          </div>
+
+          <p class="wcard__note">
+            Raw → cleaned → analytics-ready layers persisted as Parquet, with data-quality checks,
+            structured logging and rerunnable processing. The relationship edges it prepares feed
+            FinGraphAI's graph.
+          </p>
+          <div class="wcard__foot">
+            <ul class="chips chips--sm" aria-label="Technologies"><li>Python</li><li>SQL</li><li>DuckDB</li><li>Parquet</li><li>Neo4j</li></ul>
+            <button class="link-arrow" type="button" data-dossier="ledgerlake">Read dossier <svg class="i" aria-hidden="true"><use href="#i-arrow-e"/></svg></button>
+          </div>
+        </div>
+      </article>
+
+      <article class="wcard" data-reveal id="card-ranger">
+        <div class="wcard__index mono">03</div>
+        <div class="wcard__copy">
+          <p class="wcard__label mono">Product</p>
+          <h3 class="wcard__title"><em>Ranger</em></h3>
+          <p class="wcard__sub">Receipt emails in, spending analytics out. Parsed line by line, never duplicated.</p>
+
+          <div class="receipt" id="receipt" aria-label="Demo: parsing a receipt email">
+            <div class="receipt__mail">
+              <div class="receipt__mail-head mono">
+                <span>GMAIL · receipt</span><span id="receiptMailState">unparsed</span>
+              </div>
+              <div class="receipt__html mono" aria-hidden="true">&lt;table class="order"&gt;…&lt;/table&gt;</div>
+              <ul class="receipt__items" id="receiptItems"></ul>
+              <div class="receipt__total"><span>Total</span><strong id="receiptTotal">—</strong></div>
+            </div>
+            <div class="receipt__side">
+              <div class="receipt__donut" id="receiptDonut" role="img" aria-label="Spending by category"></div>
+              <ul class="receipt__legend mono" id="receiptLegend">
+                <li><i style="--c:#0B3B2E"></i>Travel <span>—</span></li>
+                <li><i style="--c:#E0A32E"></i>Food <span>—</span></li>
+                <li><i style="--c:#E4582B"></i>Fees <span>—</span></li>
+              </ul>
+              <button class="btn btn--sm btn--ink" type="button" id="receiptRun">Sync mailbox</button>
+              <span class="mono receipt__dupes" id="receiptDupes">0 duplicates on re-sync</span>
+            </div>
+          </div>
+
+          <div class="wcard__foot">
+            <ul class="chips chips--sm" aria-label="Technologies"><li>Java 21</li><li>Spring Boot</li><li>React</li><li>PostgreSQL</li><li>Gmail API</li><li>Firebase Auth</li></ul>
+            <button class="link-arrow" type="button" data-dossier="ranger">Read dossier <svg class="i" aria-hidden="true"><use href="#i-arrow-e"/></svg></button>
+          </div>
+        </div>
+      </article>
+
+      <article class="wcard" data-reveal id="card-driveu">
+        <div class="wcard__index mono">04</div>
+        <div class="wcard__copy">
+          <p class="wcard__label mono">Booking platform</p>
+          <h3 class="wcard__title">Drive<em>U</em></h3>
+          <p class="wcard__sub">Discover a driver on a map, pick a slot, pay — with three tiers of access control behind it.</p>
+
+          <div class="booking" id="booking" aria-label="Demo: driver booking with role-based access">
+            <div class="booking__roles" role="tablist" aria-label="Signed-in role">
+              <button type="button" role="tab" aria-selected="true" class="is-active" data-role="user">User</button>
+              <button type="button" role="tab" aria-selected="false" data-role="admin">Admin</button>
+              <button type="button" role="tab" aria-selected="false" data-role="super">Super Admin</button>
+            </div>
+            <div class="booking__body">
+              <div class="booking__map" id="bookingMap" aria-hidden="true">
+                <svg viewBox="0 0 320 180">
+                  <g class="map-grid" id="mapGrid"></g>
+                  <path class="map-route" d="M36 142 C 96 108, 128 128, 168 92 S 252 66, 286 40" fill="none" />
+                  <circle class="map-pin map-pin--from" cx="36" cy="142" r="7" />
+                  <circle class="map-pin map-pin--to" cx="286" cy="40" r="7" />
+                  <g class="map-driver" id="mapDriver"><circle r="11" /><path d="M-4 0h8M0-4v8" /></g>
+                </svg>
+              </div>
+              <div class="booking__panel">
+                <div class="booking__slots" id="bookingSlots" role="group" aria-label="Time slot">
+                  <button type="button" class="is-active">18:30</button>
+                  <button type="button">19:00</button>
+                  <button type="button" disabled>19:30</button>
+                </div>
+                <div class="booking__driver mono">
+                  <span>DRIVER</span><strong id="driverName">Arun K · 4.9</strong>
+                  <span>FARE</span><strong>₹248</strong>
+                </div>
+                <button class="btn btn--sm btn--ink booking__pay" type="button" id="bookingPay">Pay ₹248</button>
+                <p class="mono booking__status" id="bookingStatus" aria-live="polite">role: user · can book</p>
+              </div>
+            </div>
+          </div>
+
+          <ul class="wcard__facts">
+            <li><span class="mono">Security</span> Role-based access across User, Admin and Super Admin tiers — booking approval and dashboards are gated.</li>
+            <li><span class="mono">Flow</span> Map discovery, slot selection, booking, payment and an in-app AI chatbot.</li>
+            <li><span class="mono">Stack</span> Spring Boot · Spring Security · Angular · Razorpay</li>
+          </ul>
+
+          <div class="wcard__foot">
+            <button class="link-arrow" type="button" data-dossier="driveu">Read dossier <svg class="i" aria-hidden="true"><use href="#i-arrow-e"/></svg></button>
+          </div>
+        </div>
+      </article>
+
+      <!-- ── Arcade ── -->
+      <article class="arcade" data-reveal id="card-arcade">
+        <div class="arcade__index mono">05</div>
+        <div class="arcade__copy">
+          <p class="wcard__label mono">Arcade</p>
+          <h3 class="arcade__title">Brick<em>Breaker</em></h3>
+          <p class="arcade__sub">
+            The first program I ever wrote was a Java Swing game. Same 3 × 7 wall, same physics
+            itch — rebuilt on canvas so you can play it without installing anything.
+          </p>
+          <ul class="arcade__keys mono">
+            <li><kbd>←</kbd><kbd>→</kbd> or mouse to move</li>
+            <li><kbd>space</kbd> to launch</li>
+            <li><kbd>p</kbd> to pause</li>
+          </ul>
+          <div class="arcade__score mono">
+            <span>SCORE <strong id="gameScore">000</strong></span>
+            <span>LIVES <strong id="gameLives">3</strong></span>
+            <span>BRICKS <strong id="gameBricks">21</strong></span>
+          </div>
+          <div class="arcade__actions">
+            <button class="btn btn--coral" type="button" id="gameStart">Start game</button>
+            <button class="btn btn--ghost" type="button" id="gameReset">Reset</button>
+            <button class="link-arrow" type="button" data-dossier="brickbreaker">Read dossier <svg class="i" aria-hidden="true"><use href="#i-arrow-e"/></svg></button>
+          </div>
+        </div>
+        <div class="arcade__screen">
+          <canvas id="gameCanvas" width="640" height="460" aria-label="Brick breaker game. Use arrow keys or the mouse to move the paddle."></canvas>
+          <div class="arcade__overlay" id="gameOverlay">
+            <p class="mono">JAVA SWING / CANVAS</p>
+            <p class="arcade__overlay-title">Press <em>Start</em></p>
+            <p class="mono arcade__overlay-sub">21 bricks · 3 lives · one paddle</p>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════ SKILLS ══════════════════════════ -->
+<section class="section skills" id="skills">
+  <div class="wrap">
+    <header class="section-head section-head--split">
+      <div>
+        <p class="eyebrow" data-reveal><span class="eyebrow__num">02</span> Capability</p>
+        <h2 class="section-title" data-reveal>The toolkit, <em>in practice</em>.</h2>
+      </div>
+      <p class="section-sub" data-reveal>
+        Not a wall of logos — each tool below is one I've actually shipped with. Hover for where it
+        earned its place.
+      </p>
+    </header>
+
+    <div class="ledger" data-reveal>
+      <div class="ledger__row">
+        <div class="ledger__label"><span class="mono">Languages</span><span class="ledger__count mono">06</span></div>
+        <ul class="ledger__items">
+          <li><span class="tech" data-used="FinGraphAI, Ranger, DriveU">Java</span></li>
+          <li><span class="tech" data-used="LedgerLake, AI Fitness Helper">Python</span></li>
+          <li><span class="tech" data-used="LedgerLake data quality checks">SQL</span></li>
+          <li><span class="tech" data-used="Ranger reporting queries">PL/SQL</span></li>
+          <li><span class="tech" data-used="Ranger, FinGraphAI console">TypeScript</span></li>
+          <li><span class="tech" data-used="Portfolio, event portal">JavaScript</span></li>
+        </ul>
+      </div>
+      <div class="ledger__row">
+        <div class="ledger__label"><span class="mono">Backend</span><span class="ledger__count mono">06</span></div>
+        <ul class="ledger__items">
+          <li><span class="tech" data-used="FinGraphAI, Ranger, DriveU">Spring Boot</span></li>
+          <li><span class="tech" data-used="DriveU role-based access">Spring Security</span></li>
+          <li><span class="tech" data-used="Ranger receipt persistence">Spring Data JPA</span></li>
+          <li><span class="tech" data-used="All four products">REST APIs</span></li>
+          <li><span class="tech" data-used="Ranger Gmail authorisation">OAuth 2.0</span></li>
+          <li><span class="tech" data-used="Ranger idempotent imports">Hibernate</span></li>
+        </ul>
+      </div>
+      <div class="ledger__row">
+        <div class="ledger__label"><span class="mono">Frontend</span><span class="ledger__count mono">06</span></div>
+        <ul class="ledger__items">
+          <li><span class="tech" data-used="FinGraphAI analyst console">React</span></li>
+          <li><span class="tech" data-used="DriveU, Angular → React migration">Angular</span></li>
+          <li><span class="tech" data-used="Earlier portfolio">Next.js</span></li>
+          <li><span class="tech" data-used="This site">HTML / CSS</span></li>
+          <li><span class="tech" data-used="Ranger dashboards">Tailwind CSS</span></li>
+          <li><span class="tech" data-used="Design-system components">Design systems</span></li>
+        </ul>
+      </div>
+      <div class="ledger__row">
+        <div class="ledger__label"><span class="mono">Data engineering</span><span class="ledger__count mono">05</span></div>
+        <ul class="ledger__items">
+          <li><span class="tech" data-used="LedgerLake query layer">DuckDB</span></li>
+          <li><span class="tech" data-used="LedgerLake storage layers">Parquet</span></li>
+          <li><span class="tech" data-used="Raw → cleaned → analytics">ETL / ELT</span></li>
+          <li><span class="tech" data-used="Validation at every layer">Data quality</span></li>
+          <li><span class="tech" data-used="Account and transaction models">Data modelling</span></li>
+        </ul>
+      </div>
+      <div class="ledger__row">
+        <div class="ledger__label"><span class="mono">Databases</span><span class="ledger__count mono">04</span></div>
+        <ul class="ledger__items">
+          <li><span class="tech" data-used="FinGraphAI property graph">Neo4j</span></li>
+          <li><span class="tech" data-used="Cycle, structuring and mule traversals">Cypher</span></li>
+          <li><span class="tech" data-used="Ranger money-critical storage">PostgreSQL</span></li>
+          <li><span class="tech" data-used="Academic and side projects">MySQL</span></li>
+        </ul>
+      </div>
+      <div class="ledger__row">
+        <div class="ledger__label"><span class="mono">Cloud &amp; tools</span><span class="ledger__count mono">05</span></div>
+        <ul class="ledger__items">
+          <li><span class="tech" data-used="Pipeline exploration">AWS Glue</span></li>
+          <li><span class="tech" data-used="Every project">Git / GitHub</span></li>
+          <li><span class="tech" data-used="Spring Boot builds">Maven</span></li>
+          <li><span class="tech" data-used="Service-level tests">JUnit</span></li>
+          <li><span class="tech" data-used="API contracts">Postman</span></li>
+        </ul>
+      </div>
+      <div class="ledger__row">
+        <div class="ledger__label"><span class="mono">AI</span><span class="ledger__count mono">04</span></div>
+        <ul class="ledger__items">
+          <li><span class="tech" data-used="DriveU in-app chatbot">LLM integration</span></li>
+          <li><span class="tech" data-used="FinGraphAI explanation layer">Prompt engineering</span></li>
+          <li><span class="tech" data-used="Agent workflows">AI agents</span></li>
+          <li><span class="tech" data-used="Certified — Google and Anthropic">Generative AI</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="skills__foot mono" data-reveal>
+      Currently deepening: AI agent development and cloud data platforms.
+      <a href="#contact">Suggest a rabbit hole <svg class="i" aria-hidden="true"><use href="#i-arrow-ne"/></svg></a>
+    </p>
+  </div>
+</section>
+
+<!-- ══════════════════════════ EXPERIENCE ══════════════════════════ -->
+<section class="section experience" id="experience">
+  <div class="wrap">
+    <header class="section-head">
+      <p class="eyebrow eyebrow--light" data-reveal><span class="eyebrow__num">03</span> Experience</p>
+      <h2 class="section-title section-title--light" data-reveal>Where I've been <em>building</em>.</h2>
+    </header>
+
+    <div class="xp">
+      <article class="xp__main" data-reveal>
+        <div class="xp__head">
+          <div>
+            <p class="mono xp__dates">Dec 2025 — Present</p>
+            <h3 class="xp__role">Software Engineer</h3>
+            <p class="xp__company">LTIMindtree <span class="mono">· Hyderabad, India</span></p>
+          </div>
+          <span class="xp__badge mono">Full-time</span>
+        </div>
+        <ul class="xp__list">
+          <li>Delivered two end-to-end full-stack applications through a 3-month intensive Java Full Stack program, clearing all three milestone assessments — one shipped with live map integration and a Razorpay payment gateway.</li>
+          <li>Drove the Angular → React migration of UI modules, authoring reusable, design-system-aligned components that removed duplicated markup and standardised behaviour across screens.</li>
+          <li>Integrated REST APIs in Spring Boot with React and Angular front ends, adding request validation and consistent error handling so client–server contracts stayed predictable.</li>
+          <li>Contributed to the internal UI/UX component repository, shipping shared patterns reused across product screens and cutting one-off implementations.</li>
+        </ul>
+        <div class="xp__highlight">
+          <span class="xp__highlight-kicker mono">Hack2Future · LTIMindtree × Microsoft</span>
+          <p><strong>Top 100 finalist</strong> for a graph-based AML detection prototype (Java, Spring Boot, Neo4j) — taken from concept to a working demo at the Final Build Stage.</p>
+          <button class="link-arrow link-arrow--light" type="button" data-dossier="fingraph">See what it became <svg class="i" aria-hidden="true"><use href="#i-arrow-e"/></svg></button>
+        </div>
+      </article>
+
+      <aside class="xp__side">
+        <div class="xp__card" data-reveal>
+          <p class="mono xp__card-label">Education</p>
+          <h4>B.E. Electronics &amp; Communication</h4>
+          <p class="xp__card-sub">K. Ramakrishnan College of Engineering, Trichy</p>
+          <p class="mono xp__card-meta">2021 — 2025 · CGPA 8.56 / 10</p>
+        </div>
+        <div class="xp__card" data-reveal style="--i:1">
+          <p class="mono xp__card-label">Honours</p>
+          <h4>Two first-place wins</h4>
+          <p class="xp__card-sub">Project Expo, Saranathan College of Engineering — 1st of 40+ teams. Project Presentation, K. Ramakrishnan College of Engineering — 1st.</p>
+        </div>
+        <div class="xp__card" data-reveal style="--i:2">
+          <p class="mono xp__card-label">Languages</p>
+          <h4>English · Tamil · German</h4>
+          <p class="xp__card-sub">German at an elementary level — enough to be polite, still learning to be fluent.</p>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════ CREDENTIALS ══════════════════════════ -->
+<section class="section credentials" id="credentials">
+  <div class="wrap">
+    <header class="section-head section-head--split">
+      <div>
+        <p class="eyebrow" data-reveal><span class="eyebrow__num">04</span> Credentials</p>
+        <h2 class="section-title" data-reveal>Signed, <em>sealed</em>, certified.</h2>
+      </div>
+      <p class="section-sub" data-reveal>Four certifications that shaped how I build with AI — each one earned, not collected.</p>
+    </header>
+
+    <div class="creds">
+      <article class="cred" data-reveal>
+        <span class="cred__issuer mono">Google</span>
+        <h3>Gemini AI Agent Development</h3>
+        <p>Certified Partner Specialist</p>
+        <span class="cred__stamp mono" aria-hidden="true">Verified</span>
+      </article>
+      <article class="cred" data-reveal style="--i:1">
+        <span class="cred__issuer mono">Anthropic</span>
+        <h3>Claude Developer</h3>
+        <p>Foundations</p>
+        <span class="cred__stamp mono" aria-hidden="true">Verified</span>
+      </article>
+      <article class="cred" data-reveal style="--i:2">
+        <span class="cred__issuer mono">Vanderbilt University</span>
+        <h3>AI Agent Development</h3>
+        <p>Python &amp; Generative AI</p>
+        <span class="cred__stamp mono" aria-hidden="true">Verified</span>
+      </article>
+      <article class="cred" data-reveal style="--i:3">
+        <span class="cred__issuer mono">Microsoft</span>
+        <h3>AI Fundamentals</h3>
+        <p>For Developers</p>
+        <span class="cred__stamp mono" aria-hidden="true">Verified</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════ ABOUT ══════════════════════════ -->
+<section class="section about" id="about">
+  <div class="wrap about__grid">
+    <aside class="id-card" data-reveal>
+      <div class="id-card__top mono"><span>FIELD ID</span><span>NS—2002</span></div>
+      <figure class="id-card__portrait">
+        <img src="assets/img/portrait.png" alt="Ink portrait of Naveen S" width="840" height="1434" loading="lazy" />
+      </figure>
+      <div class="id-card__body">
+        <h3>Naveen S</h3>
+        <p class="mono">Software engineer · full-stack &amp; data</p>
+        <dl class="id-card__dl">
+          <div><dt class="mono">Based</dt><dd>Hyderabad, India</dd></div>
+          <div><dt class="mono">Local time</dt><dd><span id="clock">—</span> IST</dd></div>
+          <div><dt class="mono">Focus</dt><dd>Java · Spring · graph data</dd></div>
+        </dl>
+      </div>
+      <div class="id-card__foot mono">
+        <span class="status-dot"></span> Open to interesting problems
+      </div>
+    </aside>
+
+    <div class="about__copy">
+      <p class="eyebrow" data-reveal><span class="eyebrow__num">05</span> About</p>
+      <h2 class="section-title" data-reveal>Engineer by trade, <em>curious</em> by default.</h2>
+      <div class="about__text" data-reveal>
+        <p>
+          I'm Naveen, a software engineer in Hyderabad. I work at LTIMindtree, where the day is
+          usually split between Java and Spring Boot on one side and a React screen on the other —
+          the kind of work where the hard part isn't the code, it's working out what the data is
+          actually trying to tell you.
+        </p>
+        <p>
+          I like graphs more than most people do. Half my favourite problems are really
+          relationship problems wearing a spreadsheet costume: who paid whom, what loops back,
+          where the pattern repeats. FinGraphAI came out of that obsession.
+        </p>
+        <p>
+          Outside work I build things for the pleasure of finishing them — a receipt parser because
+          my inbox was a mess, a brick breaker because it was the first thing I ever made. I'm
+          happiest when a problem is slightly bigger than the time available, and stubbornly
+          solvable.
+        </p>
+      </div>
+
+      <div class="principles" data-reveal>
+        <div class="principle">
+          <span class="mono">01</span>
+          <p><strong>Readable beats clever.</strong> Code is read far more than it's written — especially by whoever picks up the repo next.</p>
+        </div>
+        <div class="principle">
+          <span class="mono">02</span>
+          <p><strong>Finish the whole thing.</strong> Data layer, API, interface, deployment. Anything less is a sketch, not a product.</p>
+        </div>
+        <div class="principle">
+          <span class="mono">03</span>
+          <p><strong>Boring reliability wins.</strong> Idempotent imports, validation everywhere, and checks that fail loudly beat clever guesses.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════ CONTACT ══════════════════════════ -->
+<section class="contact" id="contact">
+  <div class="wrap">
+    <p class="eyebrow" data-reveal><span class="eyebrow__num">06</span> Contact</p>
+    <h2 class="contact__title" data-reveal>Got something <em>worth building?</em></h2>
+    <p class="contact__sub" data-reveal>
+      Tell me what you're working on. I read everything and usually reply within a day.
+    </p>
+
+    <div class="contact__grid">
+      <div class="contact__left" data-reveal>
+        <a class="contact__email" href="mailto:naveensaravanan2002@gmail.com">naveensaravanan2002@gmail.com</a>
+        <button class="btn btn--lilac btn--sm" type="button" data-copy-email>Copy email <svg class="i" aria-hidden="true"><use href="#i-copy"/></svg></button>
+
+        <ul class="contact__links">
+          <li>
+            <a href="https://github.com/Naveensaravanan2002" target="_blank" rel="noopener">
+              <span class="mono">GitHub</span><span>@Naveensaravanan2002 <svg class="i" aria-hidden="true"><use href="#i-arrow-ne"/></svg></span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/naveensaravanan2002/" target="_blank" rel="noopener">
+              <span class="mono">LinkedIn</span><span>in/naveensaravanan2002 <svg class="i" aria-hidden="true"><use href="#i-arrow-ne"/></svg></span>
+            </a>
+          </li>
+          <li>
+            <a href="tel:+916379813487">
+              <span class="mono">Phone</span><span>+91 63798 13487</span>
+            </a>
+          </li>
+          <li>
+            <a href="assets/NaveenS-Resume.pdf" target="_blank" rel="noopener">
+              <span class="mono">Resume</span><span>PDF, one page <svg class="i" aria-hidden="true"><use href="#i-arrow-ne"/></svg></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <form class="contact__form" id="contactForm" novalidate>
+        <div class="field">
+          <label for="name" class="mono">Your name</label>
+          <input id="name" name="name" type="text" autocomplete="name" placeholder="Your name" required />
+        </div>
+        <div class="field">
+          <label for="email" class="mono">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email" placeholder="you@company.com" required />
+        </div>
+        <div class="field">
+          <label for="message" class="mono">What are you building?</label>
+          <textarea id="message" name="message" rows="4" placeholder="A sentence or two is plenty." required></textarea>
+        </div>
+        <input type="text" name="_honey" class="sr-only" tabindex="-1" autocomplete="off" aria-hidden="true" />
+        <button class="btn btn--ink" type="submit" id="contactSubmit">
+          <span class="contact__btn-label">Send the note</span>
+          <svg class="i" aria-hidden="true"><use href="#i-arrow-e"/></svg>
+        </button>
+        <p class="form__note mono" id="formNote">Goes straight to my inbox.</p>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ══════════════════════════ FOOTER ══════════════════════════ -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__main">
+      <div class="footer__brand">
+        <a class="footer__brand-row" href="#top">
+          <span class="monogram monogram--footer" aria-hidden="true">
+            <svg viewBox="0 0 100 100" focusable="false"><path d="M22 82V18l56 64V18" fill="none" stroke="currentColor" stroke-width="13"/></svg>
+          </span>
+          <span>
+            <strong>Naveen S</strong>
+            <small class="mono">Software engineer</small>
+          </span>
+        </a>
+        <p class="footer__tag">Java, Spring Boot and graph data — building things that make messy information make sense.</p>
+        <p class="footer__loc mono">Hyderabad, India · <span id="clockFoot">—</span> IST</p>
+      </div>
+
+      <nav class="footer__col" aria-label="Sections">
+        <p class="footer__col-title mono">Explore</p>
+        <a href="#work">Work</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#credentials">Credentials</a>
+        <a href="#about">About</a>
+      </nav>
+
+      <div class="footer__col">
+        <p class="footer__col-title mono">Elsewhere</p>
+        <a href="https://github.com/Naveensaravanan2002" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/naveensaravanan2002/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="assets/NaveenS-Resume.pdf" target="_blank" rel="noopener">Resume</a>
+        <a href="tel:+916379813487">+91 63798 13487</a>
+      </div>
+
+      <div class="footer__col">
+        <p class="footer__col-title mono">Say hello</p>
+        <a href="mailto:naveensaravanan2002@gmail.com">naveensaravanan2002@gmail.com</a>
+        <a href="#contact">Start a conversation</a>
+        <button class="footer__copy" type="button" data-copy-email>Copy email <svg class="i" aria-hidden="true"><use href="#i-copy"/></svg></button>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p class="mono">© <span id="year">2026</span> Naveen S. All rights reserved.</p>
+      <a class="footer__top-link mono" href="#top">Back to top <svg class="i" aria-hidden="true"><use href="#i-arrow-s"/></svg></a>
+    </div>
+  </div>
+  <div class="footer__word" aria-hidden="true">NAVEEN</div>
+</footer>
+
+<!-- ══════════════════════════ DOSSIER MODAL ══════════════════════════ -->
+<dialog class="modal" id="dossier" aria-labelledby="dossierTitle">
+  <div class="modal__panel" id="dossierPanel">
+    <button class="modal__close" type="button" data-modal-close aria-label="Close dossier">
+      <span></span><span></span>
+    </button>
+    <div class="dossier" id="dossierContent"></div>
+  </div>
+</dialog>
+
+<!-- ══════════════════════════ COMMAND PALETTE ══════════════════════════ -->
+<dialog class="palette" id="palette" aria-label="Quick navigation">
+  <div class="palette__panel">
+    <div class="palette__search">
+      <svg width="16" height="16" aria-hidden="true"><use href="#i-search"/></svg>
+      <input id="paletteInput" type="text" placeholder="Jump to a section, project or action…" autocomplete="off" spellcheck="false" />
+      <kbd class="mono">esc</kbd>
+    </div>
+    <ul class="palette__list" id="paletteList" role="listbox" aria-label="Results"></ul>
+    <p class="palette__hint mono"><kbd>↑</kbd><kbd>↓</kbd> to move · <kbd>enter</kbd> to go</p>
+  </div>
+</dialog>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="js/dossiers.js" defer></script>
+<script src="js/app.js" defer></script>
+<script src="js/graph.js" defer></script>
+<script src="js/pipeline.js" defer></script>
+<script src="js/receipt.js" defer></script>
+<script src="js/booking.js" defer></script>
+<script src="js/game.js" defer></script>
+</body>
+</html>
