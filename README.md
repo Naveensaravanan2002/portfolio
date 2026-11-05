@@ -10,23 +10,24 @@ python3 -m http.server 8000     # → http://localhost:8000
 
 ---
 
-## ⚠️ One thing to do: activate the contact form
+## ✉️ How the contact form delivers mail
 
-The contact form sends mail through **FormSubmit** (no server needed).
+The form needs **no server**. It picks a provider automatically:
 
-**Two things to know:**
+| Where the site is hosted | What happens |
+|---|---|
+| **Netlify** (recommended) | Netlify's own form handling posts to `/` and emails you. Free, no third party, no activation step. |
+| Anywhere else (Vercel, GitHub Pages, localhost) | Falls back to **FormSubmit**. The very first submission triggers a one-time activation email to `naveensaravanan2002@gmail.com` — click the link once and it's done forever. |
+| Opened as a file (`file://`) | Browsers block the request outright. The form says so and opens the visitor's mail app instead. Always test from a web address. |
 
-1. **Open the site from a web address, not `file://`.** If you double-click `index.html`
-   (or drag it into the browser), the page has no origin and browsers block the post to an
-   external service — the form will say so and fall back to opening the visitor's mail app.
-   Test with `python3 -m http.server 8000` → `http://localhost:8000`, or just deploy it.
-2. **Activate the form once.** After the first real submission, FormSubmit emails an
-   activation link to `naveensaravanan2002@gmail.com`. Click it. From then on every message
-   lands in your inbox (with the sender's name and email in the table).
+**Setup on Netlify, once:** deploy, then *Site configuration → Forms → Form notifications →
+Add notification → Email notification* → `naveensaravanan2002@gmail.com`.
+That's the only step — sending already works before it.
 
-- Endpoint lives in `js/app.js` → `const FORM_ENDPOINT`
-- If the request ever fails, the form falls back to opening the visitor's mail app
-- To switch to Formspree or Web3Forms later, change that one constant
+- Netlify path: `NETLIFY_FORM_NAME` in `js/app.js` must match `name="contact"` on the form
+- FormSubmit path: `const FORM_ENDPOINT` in `js/app.js`
+- Host detection is the `x-nf-request-id` response header — nothing to configure
+- If everything fails, the form falls back to opening the visitor's mail app
 
 ---
 

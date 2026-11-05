@@ -780,7 +780,8 @@
         </ul>
       </div>
 
-      <form class="contact__form" id="contactForm" novalidate>
+      <form class="contact__form" id="contactForm" name="contact" method="POST" action="/" data-netlify="true" netlify-honeypot="bot-field" novalidate>
+        <input type="hidden" name="form-name" value="contact" />
         <div class="field">
           <label for="name" class="mono">Your name</label>
           <input id="name" name="name" type="text" autocomplete="name" placeholder="Your name" required />
@@ -793,7 +794,7 @@
           <label for="message" class="mono">What are you building?</label>
           <textarea id="message" name="message" rows="4" placeholder="A sentence or two is plenty." required></textarea>
         </div>
-        <input type="text" name="_honey" class="sr-only" tabindex="-1" autocomplete="off" aria-hidden="true" />
+        <p class="sr-only" aria-hidden="true"><label>Leave this field empty <input name="bot-field" tabindex="-1" autocomplete="off" /></label></p>
         <button class="btn btn--ink" type="submit" id="contactSubmit">
           <span class="contact__btn-label">Send the note</span>
           <svg class="i" aria-hidden="true"><use href="#i-arrow-e"/></svg>

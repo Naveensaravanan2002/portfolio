@@ -398,9 +398,28 @@
     });
   }
 
-  /* ── contact form → delivered by email (FormSubmit AJAX) ────── */
+  /* ── contact form → delivered by email ───────────────────────
+     Hosted on Netlify? Then Netlify's own form handling does the mailing:
+     same-origin, no third party, no activation step. Anywhere else the
+     FormSubmit AJAX endpoint is used instead.
+     ────────────────────────────────────────────────────────────── */
+  const NETLIFY_FORM_NAME = 'contact';
   const FORM_ENDPOINT = 'https://formsubmit.co/ajax/naveensaravanan2002@gmail.com';
   const openedFromFile = window.location.protocol === 'file:';
+
+  /* Netlify stamps every response with an x-nf-request-id header, so one
+     same-origin HEAD is enough to tell which host we're on. Cached. */
+  let netlifyHost = null;
+  const hostedOnNetlify = async () => {
+    if (netlifyHost !== null) return netlifyHost;
+    try {
+      const res = await fetch('assets/favicon.svg', { method: 'HEAD', cache: 'no-store' });
+      netlifyHost = res.headers.has('x-nf-request-id');
+    } catch (err) {
+      netlifyHost = false;
+    }
+    return netlifyHost;
+  };
 
   const form = $('#contactForm');
   if (form) {
@@ -453,26 +472,41 @@
       setNote('Sending your note…', '');
 
       try {
-        const res = await fetch(FORM_ENDPOINT, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-          body: JSON.stringify({
+        if (await hostedOnNetlify()) {
+          const body = new URLSearchParams({
+            'form-name': NETLIFY_FORM_NAME,
             name: name.trim(),
             email: email.trim(),
             message: message.trim(),
-            _subject: `Portfolio note from ${name.trim()}`,
-            _template: 'table',
-            _captcha: 'false'
-          })
-        });
+            'bot-field': ''
+          });
+          const res = await fetch('/', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            body: body.toString()
+          });
+          if (!res.ok) throw new Error(`Netlify form returned ${res.status}.`);
+        } else {
+          const res = await fetch(FORM_ENDPOINT, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+            body: JSON.stringify({
+              name: name.trim(),
+              email: email.trim(),
+              message: message.trim(),
+              _subject: `Portfolio note from ${name.trim()}`,
+              _template: 'table',
+              _captcha: 'false'
+            })
+          });
 
-        let data = null;
-        try { data = await res.json(); } catch (err) { /* non-JSON reply */ }
+          let data = null;
+          try { data = await res.json(); } catch (err) { /* non-JSON reply */ }
 
-        const failed = !res.ok || (data && (data.success === false || data.success === 'false'));
-        if (failed) {
-          const message = (data && (data.message || data.error)) || `Request failed (${res.status}).`;
-          throw new Error(message);
+          const failed = !res.ok || (data && (data.success === false || data.success === 'false'));
+          if (failed) {
+            throw new Error((data && (data.message || data.error)) || `Request failed (${res.status}).`);
+          }
         }
 
         form.reset();
